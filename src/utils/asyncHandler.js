@@ -1,7 +1,7 @@
 // A utils (short for utilities) file is where you store reusable helper functions that are not tied to any specific route or component — but are used across the project.
 
 
-//Promises wala 
+// Promises wala 
 const asyncHandler = (requestHandler)=>{
     (req,res,next)=>{
         Promise.resolve(requestHandler(req,res,next)).catch((error)=> next(error))
@@ -44,5 +44,5 @@ export {asyncHandler}
 //     }
 
 // }
-
+// export {asyncHandler}
 

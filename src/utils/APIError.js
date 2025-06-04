@@ -1,3 +1,5 @@
+//You're looking at a custom error class in JavaScript/Node.js designed to handle API errors in a clean and consistent way.
+
 class APIError extends Error{
     constructor(
         statusCode,
