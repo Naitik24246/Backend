@@ -1,0 +1,21 @@
+We have started Backend series from chai aur code channel 
+here are the important definations and important questions for revising and explanations
+Firstly we have File structure in which there are many differnet types of file to have clean coding environment and make code to look good.
+
+we have One Public file:
+Serves static assets to the frontend (only used if the backend also serves frontend files).
+
+Then we have one src file in which all the backend codebase lives here.
+In src there are many other components:- 
+
+1. Routes: Defines all the API endpoints and organizes them based on feature/domain
+2. Controllers:Handles the main business logic for each route.
+3. models:Defines database schemas using Mongoose (MongoDB) or any ORM/ODM.
+4. middlewares:Contains reusable functions to process requests before controllers handle them.
+5. db : Contains reusable functions to process requests before controllers handle them.
+6. Helper or utilis: Utility functions used across the app (email, date formatter, token generation).
+7. app.js: Set up middlewares, parsers, routes – core Express configuration.
+8. index.js: The entry point of your backend server. Starts the app.
+9. constants.js:Central place to store constants like messages, regex, app-specific enums.
+10. .env : Contains secret information about your app your api key and many more 
+
