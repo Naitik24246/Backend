@@ -1,6 +1,7 @@
 import express from "express"
 import cors from "cors"
 import cookieParser from "cookie-parser"
+import userRouter from './routes/user.routes.js'
 
 const app=express()
 // WHEN WE USE MIDDLE WARES AND FOR CONFIGURATION SETTINGS WE OFTEN USE APP.USE()
@@ -16,6 +17,8 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}))//To store data from th
 app.use(express.static("public"))// To store pdf and images assests and show to to the browser
 
 app.use(cookieParser())
+
+app.use("/api/v1/users",userRouter)
 
 
 export { app }
